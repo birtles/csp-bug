@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D34BCE9E2736407600955778 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = D34BCE9D2736407600955778 /* background.js */; };
+		D3720DA62736380300A2E5E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3720DA52736380300A2E5E8 /* AppDelegate.swift */; };
+		D3720DAA2736380300A2E5E8 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D3720DA82736380300A2E5E8 /* Main.html */; };
+		D3720DAC2736380300A2E5E8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3720DAB2736380300A2E5E8 /* Icon.png */; };
+		D3720DAE2736380300A2E5E8 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = D3720DAD2736380300A2E5E8 /* Style.css */; };
+		D3720DB02736380300A2E5E8 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = D3720DAF2736380300A2E5E8 /* Script.js */; };
+		D3720DB22736380300A2E5E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3720DB12736380300A2E5E8 /* ViewController.swift */; };
+		D3720DB52736380300A2E5E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3720DB32736380300A2E5E8 /* Main.storyboard */; };
+		D3720DB72736380500A2E5E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3720DB62736380500A2E5E8 /* Assets.xcassets */; };
+		D3720DBF2736380500A2E5E8 /* CSP bug repro Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3720DBE2736380500A2E5E8 /* CSP bug repro Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3720DC42736380500A2E5E8 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3720DC32736380500A2E5E8 /* SafariWebExtensionHandler.swift */; };
+		D3720DD52736380600A2E5E8 /* images in Resources */ = {isa = PBXBuildFile; fileRef = D3720DD02736380500A2E5E8 /* images */; };
+		D3720DD62736380600A2E5E8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D3720DD12736380500A2E5E8 /* README.md */; };
+		D3720DD72736380600A2E5E8 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D3720DD22736380600A2E5E8 /* manifest.json */; };
+		D3720DD82736380600A2E5E8 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = D3720DD32736380600A2E5E8 /* content.js */; };
+		D3720DD92736380600A2E5E8 /* CSP bug repro in Resources */ = {isa = PBXBuildFile; fileRef = D3720DD42736380600A2E5E8 /* CSP bug repro */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3720DC02736380500A2E5E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3720D9A2736380300A2E5E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3720DBD2736380500A2E5E8;
+			remoteInfo = "CSP bug repro Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3720DCB2736380500A2E5E8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D3720DBF2736380500A2E5E8 /* CSP bug repro Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D34BCE9D2736407600955778 /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../background.js; sourceTree = "<group>"; };
+		D3720DA22736380300A2E5E8 /* CSP bug repro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSP bug repro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3720DA52736380300A2E5E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3720DA92736380300A2E5E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		D3720DAB2736380300A2E5E8 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D3720DAD2736380300A2E5E8 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		D3720DAF2736380300A2E5E8 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		D3720DB12736380300A2E5E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3720DB42736380300A2E5E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3720DB62736380500A2E5E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3720DB82736380500A2E5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3720DB92736380500A2E5E8 /* CSP bug repro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CSP bug repro.entitlements"; sourceTree = "<group>"; };
+		D3720DBE2736380500A2E5E8 /* CSP bug repro Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CSP bug repro Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3720DC32736380500A2E5E8 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		D3720DC52736380500A2E5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3720DD02736380500A2E5E8 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../images; sourceTree = "<group>"; };
+		D3720DD12736380500A2E5E8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		D3720DD22736380600A2E5E8 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../manifest.json; sourceTree = "<group>"; };
+		D3720DD32736380600A2E5E8 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../content.js; sourceTree = "<group>"; };
+		D3720DD42736380600A2E5E8 /* CSP bug repro */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CSP bug repro"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3720D9F2736380300A2E5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3720DBB2736380500A2E5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3720D992736380300A2E5E8 = {
+			isa = PBXGroup;
+			children = (
+				D3720DA42736380300A2E5E8 /* CSP bug repro */,
+				D3720DC22736380500A2E5E8 /* CSP bug repro Extension */,
+				D3720DA32736380300A2E5E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3720DA32736380300A2E5E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3720DA22736380300A2E5E8 /* CSP bug repro.app */,
+				D3720DBE2736380500A2E5E8 /* CSP bug repro Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3720DA42736380300A2E5E8 /* CSP bug repro */ = {
+			isa = PBXGroup;
+			children = (
+				D3720DA52736380300A2E5E8 /* AppDelegate.swift */,
+				D3720DB12736380300A2E5E8 /* ViewController.swift */,
+				D3720DB32736380300A2E5E8 /* Main.storyboard */,
+				D3720DB62736380500A2E5E8 /* Assets.xcassets */,
+				D3720DB82736380500A2E5E8 /* Info.plist */,
+				D3720DB92736380500A2E5E8 /* CSP bug repro.entitlements */,
+				D3720DA72736380300A2E5E8 /* Resources */,
+			);
+			path = "CSP bug repro";
+			sourceTree = "<group>";
+		};
+		D3720DA72736380300A2E5E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3720DA82736380300A2E5E8 /* Main.html */,
+				D3720DAB2736380300A2E5E8 /* Icon.png */,
+				D3720DAD2736380300A2E5E8 /* Style.css */,
+				D3720DAF2736380300A2E5E8 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3720DC22736380500A2E5E8 /* CSP bug repro Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D3720DCF2736380500A2E5E8 /* Resources */,
+				D3720DC32736380500A2E5E8 /* SafariWebExtensionHandler.swift */,
+				D3720DC52736380500A2E5E8 /* Info.plist */,
+			);
+			path = "CSP bug repro Extension";
+			sourceTree = "<group>";
+		};
+		D3720DCF2736380500A2E5E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D34BCE9D2736407600955778 /* background.js */,
+				D3720DD02736380500A2E5E8 /* images */,
+				D3720DD12736380500A2E5E8 /* README.md */,
+				D3720DD22736380600A2E5E8 /* manifest.json */,
+				D3720DD32736380600A2E5E8 /* content.js */,
+				D3720DD42736380600A2E5E8 /* CSP bug repro */,
+			);
+			name = Resources;
+			path = "CSP bug repro Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3720DA12736380300A2E5E8 /* CSP bug repro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3720DCC2736380500A2E5E8 /* Build configuration list for PBXNativeTarget "CSP bug repro" */;
+			buildPhases = (
+				D3720D9E2736380300A2E5E8 /* Sources */,
+				D3720D9F2736380300A2E5E8 /* Frameworks */,
+				D3720DA02736380300A2E5E8 /* Resources */,
+				D3720DCB2736380500A2E5E8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3720DC12736380500A2E5E8 /* PBXTargetDependency */,
+			);
+			name = "CSP bug repro";
+			productName = "CSP bug repro";
+			productReference = D3720DA22736380300A2E5E8 /* CSP bug repro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3720DBD2736380500A2E5E8 /* CSP bug repro Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3720DC82736380500A2E5E8 /* Build configuration list for PBXNativeTarget "CSP bug repro Extension" */;
+			buildPhases = (
+				D3720DBA2736380500A2E5E8 /* Sources */,
+				D3720DBB2736380500A2E5E8 /* Frameworks */,
+				D3720DBC2736380500A2E5E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CSP bug repro Extension";
+			productName = "CSP bug repro Extension";
+			productReference = D3720DBE2736380500A2E5E8 /* CSP bug repro Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3720D9A2736380300A2E5E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					D3720DA12736380300A2E5E8 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					D3720DBD2736380500A2E5E8 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = D3720D9D2736380300A2E5E8 /* Build configuration list for PBXProject "CSP bug repro" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3720D992736380300A2E5E8;
+			productRefGroup = D3720DA32736380300A2E5E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3720DA12736380300A2E5E8 /* CSP bug repro */,
+				D3720DBD2736380500A2E5E8 /* CSP bug repro Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3720DA02736380300A2E5E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3720DAC2736380300A2E5E8 /* Icon.png in Resources */,
+				D3720DB52736380300A2E5E8 /* Main.storyboard in Resources */,
+				D3720DB02736380300A2E5E8 /* Script.js in Resources */,
+				D3720DAA2736380300A2E5E8 /* Main.html in Resources */,
+				D3720DB72736380500A2E5E8 /* Assets.xcassets in Resources */,
+				D3720DAE2736380300A2E5E8 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3720DBC2736380500A2E5E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3720DD82736380600A2E5E8 /* content.js in Resources */,
+				D3720DD62736380600A2E5E8 /* README.md in Resources */,
+				D3720DD72736380600A2E5E8 /* manifest.json in Resources */,
+				D3720DD52736380600A2E5E8 /* images in Resources */,
+				D34BCE9E2736407600955778 /* background.js in Resources */,
+				D3720DD92736380600A2E5E8 /* CSP bug repro in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3720D9E2736380300A2E5E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3720DB22736380300A2E5E8 /* ViewController.swift in Sources */,
+				D3720DA62736380300A2E5E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3720DBA2736380500A2E5E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3720DC42736380500A2E5E8 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3720DC12736380500A2E5E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3720DBD2736380500A2E5E8 /* CSP bug repro Extension */;
+			targetProxy = D3720DC02736380500A2E5E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3720DA82736380300A2E5E8 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3720DA92736380300A2E5E8 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		D3720DB32736380300A2E5E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3720DB42736380300A2E5E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3720DC62736380500A2E5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3720DC72736380500A2E5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D3720DC92736380500A2E5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CSP bug repro Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CSP bug repro Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.CSP-bug-repro.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3720DCA2736380500A2E5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CSP bug repro Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CSP bug repro Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.CSP-bug-repro.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D3720DCD2736380500A2E5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CSP bug repro/CSP bug repro.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CSP bug repro/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CSP bug repro";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.CSP-bug-repro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3720DCE2736380500A2E5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CSP bug repro/CSP bug repro.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CSP bug repro/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CSP bug repro";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.CSP-bug-repro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3720D9D2736380300A2E5E8 /* Build configuration list for PBXProject "CSP bug repro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3720DC62736380500A2E5E8 /* Debug */,
+				D3720DC72736380500A2E5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3720DC82736380500A2E5E8 /* Build configuration list for PBXNativeTarget "CSP bug repro Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3720DC92736380500A2E5E8 /* Debug */,
+				D3720DCA2736380500A2E5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3720DCC2736380500A2E5E8 /* Build configuration list for PBXNativeTarget "CSP bug repro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3720DCD2736380500A2E5E8 /* Debug */,
+				D3720DCE2736380500A2E5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3720D9A2736380300A2E5E8 /* Project object */;
+}
